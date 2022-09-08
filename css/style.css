@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #223843
+}
+.container {
+    margin: 100px auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+}
+/* Mobile Screen */ 
+@media (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+.search-wrapper {
+    display: flex;
+    gap: 10px;
+}
+/* Mobile Screen */ 
+@media (min-width: 320px) and (max-width: 480px) {
+    .search-wrapper {
+    flex-flow: column;
+    }
+}
+input {
+    width: 400px;
+    padding: 15px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+input:focus {
+    box-shadow: 0px 0px 10px 0px black;
+}
+/* Mobile Screen */ 
+@media (min-width: 320px) and (max-width: 480px) {
+    input {
+    width: 300px;
+    padding: 10px;
+    }
+}
+button {
+    padding: 15px 10px;
+    width: 100px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #DBD3D8;
+    font-size: 18px;
+    transition: .3s;
+    box-shadow: 0px 0px 5px 0px rgb(19, 18, 18);
+}
+button:hover {
+    background-color: #f0e5ec;
+    box-shadow: 0px 0px 15px 0px black;
+    transition: .3s;
+}
+button:active {
+    background-color: #d3c3cc;
+    box-shadow: 0px 0px 10px 0px black;
+}
+/* Mobile Screen */ 
+@media (min-width: 320px) and (max-width: 480px) {
+    button {
+    width: 300px;
+    padding: 10px;
+    }
+}
+.result {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+.male {
+    padding: 5px;
+    color: rgb(71, 71, 212);
+}
+.female {
+    padding: 5px;
+    color: rgb(214, 163, 171);
+}
